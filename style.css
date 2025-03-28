@@ -1,0 +1,401 @@
+/* Global Styles */
+:root {
+    --primary-green: #019460;
+    --text-gray: #898989;
+    --overlay-green: #337A69;
+    --button-orange: #E97300;
+    --border-gray: #ededed;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.header__logo {
+    padding: 30px;
+    max-width: 200px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 30rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Overlay Design */
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    max-width: 600px;
+    height: 100%;
+    background-color: var(--overlay-green);
+    clip-path: polygon(33% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0.92;
+}
+
+/* Investor Section */
+.investor {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.investor__heading {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.investor__heading::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: var(--primary-green);
+    margin: 8px auto 0;
+}
+
+.investor__text {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+/* Button Styling */
+.button {
+    background-color: var(--button-orange);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #D36600;
+}
+
+/* Citizens Advantage Section */
+.advantage {
+    padding: 20px;
+}
+
+.advantage__heading {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
+
+.advantage__heading::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: var(--primary-green);
+    margin: 8px auto 0;
+}
+
+/* Features List (2x2 on web, 1x4 on mobile) */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.features__item {
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.features__item:nth-child(1) a {
+    text-decoration: none;
+    color: #A1BA68;
+}
+
+.features__item:nth-child(1) a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Border Right (Only on 1st & 3rd Items) */
+.features__item:nth-child(odd) {
+    border-right: 3px solid var(--border-gray);
+}
+
+/* Text Styling */
+.features__item h3 {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.features__item p {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Citizens Info Section */
+.citizens-info {
+    padding: 30px;
+}
+
+.citizens-info__heading {
+    background-color: #00955e;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8rem; /* Adjust heading font size */
+    font-weight: 500;
+}
+
+.citizens-info__text {
+    background-color: #ebf7f5;
+    color: #808b89;
+    padding: 35px;
+    margin-top: 0;
+    line-height: 1.8;
+    font-size: 1.2rem; /* Adjust text font size */
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.testimonials ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.testimonial-item {
+    width: 30%;
+    text-align: center;
+}
+
+.testimonial-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-item .testimonial-text {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.5;
+    margin-top: 15px;
+    font-style: italic;
+    position: relative;
+}
+
+.testimonial-item .testimonial-text::before {
+    content: "“";
+    font-size: 7rem;
+    color: #edeaea;
+    position: absolute;
+    left: -15px;
+    top: -40px;
+    z-index: -1;
+}
+
+.testimonial-item .testimonial-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00935F;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+.footer {
+    padding: 20px;
+}
+
+/* Container for all footer content */
+.footer-container {
+    text-align: left;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Social Media Section */
+.footer-social {
+    min-width: 150px;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-item {
+    display: inline-block;
+}
+
+.social-link {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Policy Text Section */
+.footer-policy {
+    min-width: 300px;
+    text-align: left;
+}
+
+.policy-text {
+    font-size: 0.9rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.policy-text a {
+    color: #666;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* Links Section */
+.footer-links {
+    min-width: 150px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.link-item {
+    display: inline-block;
+    position: relative;
+}
+
+.link-item:not(:last-child) a::after {
+    content: "|";
+    font-size: 1rem;
+    color: #000;
+    margin-left: 10px;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.link-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 0;
+    }
+    .hero__overlay {
+        display: none;
+    }
+
+    .investor__heading,
+    .advantage__heading {
+        font-size: 1.8rem;
+    }
+
+    .investor__text {
+        font-size: 0.95rem;
+    }
+    
+    /* Stack list into 1x4 on Mobile */
+    .features {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    
+    .features__item {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    /* Remove Right Borders */
+    .features__item:nth-child(odd) {
+        border-right: 0;
+    }
+
+    .features__item {
+        border-bottom: 3px solid var(--border-gray);
+    }
+
+    .citizens-info__heading {
+        font-size: 1.3rem;
+    }
+    
+    .citizens-info__text {
+        font-size: 0.95rem;
+    }
+
+    .testimonials ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-item {
+        width: 80%;
+    }
+
+    .testimonial-item .testimonial-text,.testimonial-item .testimonial-author {
+        font-size: 0.9rem;
+    }
+}
