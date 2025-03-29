@@ -5,6 +5,9 @@
     --overlay-green: #337A69;
     --button-orange: #E97300;
     --border-gray: #ededed;
+    --text-size-heading : 2.5rem;
+    --text-size-sub-heading: 1.5rem;
+    --text-size-para: 1.2rem;
 }
 
 body {
@@ -61,7 +64,7 @@ body {
 
 .investor__heading {
     color: var(--primary-green);
-    font-size: 2.5rem;
+    font-size: var(--text-size-heading);
     margin: 10px 0 20px 0;
     position: relative;
     display: inline-block;
@@ -78,7 +81,7 @@ body {
 
 .investor__text {
     color: var(--text-gray);
-    font-size: 1.2rem;
+    font-size: var(--text-size-para);
     line-height: 1.6;
     margin: 0 auto;
 }
@@ -87,7 +90,7 @@ body {
 .button {
     background-color: var(--button-orange);
     color: white;
-    font-size: 1.2rem;
+    font-size: var(--text-size-para);
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -107,7 +110,7 @@ body {
 
 .advantage__heading {
     color: var(--primary-green);
-    font-size: 2.5rem;
+    font-size: var(--text-size-heading);
     font-weight: 600;
     margin-bottom: 20px;
     position: relative;
@@ -159,14 +162,14 @@ body {
 /* Text Styling */
 .features__item h3 {
     color: var(--primary-green);
-    font-size: 1.5rem;
+    font-size: var(--text-size-sub-heading);
     margin-bottom: 10px;
     font-weight: 500;
 }
 
 .features__item p {
     color: var(--text-gray);
-    font-size: 1.2rem;
+    font-size: var(--text-size-para);
     line-height: 1.5;
 }
 
@@ -191,7 +194,7 @@ body {
     padding: 35px;
     margin-top: 0;
     line-height: 1.8;
-    font-size: 1.2rem; /* Adjust text font size */
+    font-size: var(--text-size-para); /* Adjust text font size */
 }
 
 /* Testimonials Section */
@@ -225,7 +228,7 @@ body {
 }
 
 .testimonial-item .testimonial-text {
-    font-size: 1.2rem;
+    font-size: var(--text-size-para);
     color: #666666;
     line-height: 1.5;
     margin-top: 15px;
@@ -244,7 +247,7 @@ body {
 }
 
 .testimonial-item .testimonial-author {
-    font-size: 1.2rem;
+    font-size: var(--text-size-para);
     font-weight: bold;
     color: #00935F;
     margin-top: 10px;
